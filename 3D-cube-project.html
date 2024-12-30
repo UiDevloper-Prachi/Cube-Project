@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        color: rgb(240, 231, 229);
+        text-align: center;
+
+    }
+
+    .front {
+        background-color: chartreuse;
+        transform: matrix(1, 1.1, 0, 1, 506, 250);
+        height: 200px;
+        width: 86px;
+        z-index: 2;
+        opacity: 0.5;
+        transition: 1s;
+    }
+
+    .Back {
+        background-color: cyan;
+        transform: matrix(1, 1.1, 0, 1, 706, 250);
+        height: 199px;
+        width: 86px;
+        z-index: 3;
+        opacity: 0.5;
+    }
+
+    .left {
+        background-color: darkmagenta;
+        transform: matrix(1, 0, 0.9, 1, 550, 200);
+        height: 100px;
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+    .right {
+        background-color: green;
+        transform: matrix(1, 0, 0.9, 1, 550, 400);
+        height: 100px;
+
+    }
+
+    .top {
+        background-color: peru;
+        transform: matrix(1, 0, 0, 1, 505, 200);
+        z-index: 0;
+    }
+
+    .bottom {
+        transform: matrix(1, 0, 0, 1, 594, 300);
+        background-color: slateblue;
+        opacity: 0.8;
+    }
+
+    /* .cube:hover {
+        transform: rotatex(360deg);
+        transition: 5s;
+    } */
+
+    .front:hover {
+        transform: translate(20px, 20px);
+        box-shadow: 5px 10px 5px black;
+        transition: 5s;
+    }
+
+    .left:hover {
+        transform: translate(40px, 40px);
+        box-shadow: 5px 10px 5px black;
+        transition: 5s;
+    }
+
+    .right:hover {
+        transform: translatex(20px, 20px);
+        box-shadow: 5px 10px 5px black;
+        transition: 5s;
+    }
+
+    .bottom:hover {
+        transform: skew(180deg);
+        box-shadow: 5px 10px 5px black;
+        transition: 5s;
+    }
+</style>
+
+<body>
+
+    <div class="cube">
+        <div class="front">right</div>
+        <div class="Back">left</div>
+        <div class="left"> top</div>
+        <div class="right"> bottom </div>
+        <div class="top"> back </div>
+        <div class="bottom">Front</div>
+    </div>
+
+</body>
+
+</html>
